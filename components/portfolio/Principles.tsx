@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import { principles } from "./data";
+import AnimatedText from "./AnimatedText";
 
 export default function Principles() {
   return (
     <section className="page-shell relative overflow-hidden bg-ink py-28 text-cream md:py-44">
       <div className="mb-24 grid gap-8 md:grid-cols-12">
         <p className="text-[10px] font-semibold uppercase tracking-[.22em] text-orange md:col-span-3">05 · About Me</p>
-        <h2 className="display-text text-balance text-[clamp(3.8rem,7.2vw,8.2rem)] leading-[.86] md:col-span-9">My mission is to help individuals embrace their unique stories and navigate their transitions with total confidence.</h2>
+        <div className="md:col-span-9"><AnimatedText><h2 className="display-text text-balance text-[clamp(3.8rem,7.2vw,8.2rem)] leading-[.86]">My mission is to help you embrace your unique story and navigate your transition with total confidence.</h2></AnimatedText></div>
       </div>
       <div className="border-b border-cream/12">
         {principles.map((principle, index) => (

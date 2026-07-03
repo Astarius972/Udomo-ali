@@ -11,7 +11,7 @@ export const navItems = [
 export const journeyItems = [
   {
     number: "01",
-    title: "Law Graduate & Foundational Thinker",
+    title: "Constructive Thinker",
     description: "Earned a law degree, developing core skills in strategic analysis, compliance, client advocacy, and structured problem-solving.",
     imagePath: "/images/journey/law.jpg",
     accent: "Strategic analysis · Compliance · Client advocacy",
@@ -27,7 +27,7 @@ export const journeyItems = [
   },
   {
     number: "03",
-    title: "Human Resources & Business Development Specialist",
+    title: "Human Resources & Business Development",
     description: "Successfully managed employee relations, recruitment strategies, and drove market/business growth across diverse organisational settings.",
     imagePath: "/images/journey/hr-business.jpg",
     accent: "Employee relations · Recruitment strategies",
@@ -51,7 +51,7 @@ export const journeyItems = [
   },
   {
     number: "06",
-    title: "Professional Career Counsellor (Current)",
+    title: "Professional Career Counsellor",
     description: "Synthesising a lifetime of diverse industry knowledge to empower clients, map out career trajectories, and mentor individuals through pivotal professional transitions.",
     imagePath: "/images/journey/counselling.jpg",
     accent: "Career trajectories · Professional transitions",
@@ -96,5 +96,4 @@ export const expertise = [
 export const principles = [
   "A career isn’t a rigid straight line, it’s an evolution.",
   "I don't just advise on careers from a textbook, I deeply understand the real-world twists, turns, anxieties, and triumphs it takes to find your true professional footing.",
-  "My mission is to help individuals embrace their unique stories and navigate their transitions with total confidence.",
 ] as const;

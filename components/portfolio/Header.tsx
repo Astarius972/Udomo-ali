@@ -20,16 +20,16 @@ export default function Header() {
         </a>
         <nav className="hidden items-center gap-4 text-[11px] text-cream/65 lg:flex" aria-label="Primary navigation">
           {navItems.map((item, index) => <span className="flex items-center gap-4" key={item.href}><a className="transition-colors hover:text-cream" href={item.href}>{item.label}</a>{index < navItems.length - 1 && <i className="text-cream/20">/</i>}</span>)}
-          <a className="ml-5 inline-flex items-center gap-2 rounded-full border border-orange/70 px-5 py-2.5 text-cream transition-colors hover:bg-orange" href="#contact">Let&apos;s talk <ArrowUpRight className="size-3.5" /></a>
+          <a className="editorial-button editorial-button--primary editorial-button--small ml-5" href="#contact">Let&apos;s talk <ArrowUpRight className="size-3.5" /></a>
         </nav>
-        <button className="grid size-11 place-items-center rounded-full border border-cream/25 lg:hidden" type="button" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}><Menu className="size-5" /></button>
+        <button className="square-action grid size-11 border border-cream/25 lg:hidden" type="button" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}><Menu className="size-5" /></button>
       </div>
       <AnimatePresence>
         {open && (
           <motion.div className="fixed inset-0 z-[200] isolate text-cream lg:hidden" initial={{ clipPath: "circle(0% at 90% 6%)" }} animate={{ clipPath: "circle(150% at 90% 6%)" }} exit={{ clipPath: "circle(0% at 90% 6%)" }} transition={{ duration: .65, ease: [.76, 0, .24, 1] }}>
             <div className="pointer-events-none fixed inset-0 z-[201] bg-ink" />
-            <div className="page-shell relative z-[202] flex h-[84px] items-center justify-between"><span className="display-text text-xl">Udomo Ali</span><button className="grid size-11 place-items-center rounded-full border border-cream/25" onClick={() => setOpen(false)} aria-label="Close menu"><X className="size-5" /></button></div>
-            <nav className="page-shell relative z-[202] flex h-[calc(100vh-84px)] flex-col justify-center gap-3" aria-label="Mobile navigation">
+            <div className="page-shell relative z-[202] flex h-[84px] items-center justify-between"><span className="display-text text-xl">Udomo Ali</span><button className="square-action grid size-11 border border-cream/25" onClick={() => setOpen(false)} aria-label="Close menu"><X className="size-5" /></button></div>
+            <nav className="page-shell relative z-[202] flex h-[calc(100dvh-84px)] flex-col justify-center gap-3" aria-label="Mobile navigation">
               {navItems.map((item, index) => <motion.a className="display-text border-b border-cream/12 py-3 text-5xl uppercase" href={item.href} key={item.href} onClick={() => setOpen(false)} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .18 + index * .06 }}>{item.label}</motion.a>)}
             </nav>
           </motion.div>

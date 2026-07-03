@@ -11,7 +11,6 @@ export default function About() {
         <div className="mt-24 grid min-w-0 gap-14 lg:grid-cols-[.84fr_1.16fr] lg:gap-28">
           <div className="relative min-w-0 lg:sticky lg:top-28 lg:self-start">
             <PlaceholderImage path="/images/about.jpg" label="About Me: Navigating Paths, Unlocking Potential" number="UA" tone="clay" className="aspect-[4/5] min-h-[460px]" />
-            <div className="absolute -bottom-7 right-4 max-w-[240px] border border-cream/10 bg-card p-5 shadow-2xl md:-right-8"><p className="text-[8px] uppercase tracking-[.2em] text-muted">Location</p><p className="display-text mt-2 text-xl leading-tight text-cream">Available for opportunities globally</p></div>
           </div>
           <div className="min-w-0 space-y-10">
             <AnimatedText><p className="display-text text-balance text-4xl leading-[1.02] text-cream md:text-6xl">My own journey began with a law degree, an intense training ground that built a strong foundation in advocacy, critical thinking, objective analysis, and a deep understanding of human behaviour.</p></AnimatedText>

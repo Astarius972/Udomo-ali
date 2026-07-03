@@ -20,12 +20,9 @@ pnpm start
 
 ## Image structure
 
-The supplied image is the only current photograph and is used at:
+Selected client photography is used throughout the editorial layout:
 
-- `public/images/hero.jpg`
-
-The remaining visual areas deliberately render premium gradient placeholders. Their intended replacement paths are:
-
+- `public/images/hero-udomo.jpg`
 - `public/images/about.jpg`
 - `public/images/journey/law.jpg`
 - `public/images/journey/research.jpg`
@@ -35,6 +32,4 @@ The remaining visual areas deliberately render premium gradient placeholders. Th
 - `public/images/journey/counselling.jpg`
 - `public/images/contact.jpg`
 
-Placeholder paths and labels are defined in `components/portfolio/data.ts` and in the `About` and `Contact` components. The shared placeholder implementation is `components/portfolio/PlaceholderImage.tsx`.
-
-When real images arrive, add them at the paths above and replace each `PlaceholderImage` usage with Next.js `Image`, following the hero implementation in `components/portfolio/Hero.tsx`.
+Image paths and chapter labels are defined in `components/portfolio/data.ts`. The shared editorial image treatment, responsive crops, overlays, and fallback state are implemented in `components/portfolio/PlaceholderImage.tsx`.
