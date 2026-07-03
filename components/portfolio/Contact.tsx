@@ -11,7 +11,7 @@ export default function Contact() {
       <div data-orange-glow className="orange-glow pointer-events-none absolute -right-24 top-0 size-[700px] rounded-full opacity-70" />
       <div className="page-shell relative z-10">
         <p className="text-[10px] font-semibold uppercase tracking-[.22em] text-orange">06 · Contact Information & Professional Links</p>
-        <div className="mt-8"><AnimatedText><h2 className="display-text max-w-[1500px] text-[clamp(4.5rem,10.2vw,12rem)] leading-[.78]">Let&apos;s connect and map out your <span className="text-orange">next professional chapter.</span></h2></AnimatedText></div>
+        <div className="mt-8"><AnimatedText><h2 className="display-text max-w-[1400px] text-[clamp(2.6rem,7vw,8rem)] leading-[.9]">Let&apos;s connect and map out your <span className="text-orange">next professional chapter.</span></h2></AnimatedText></div>
 
         <div className="mt-20 grid gap-10 border-t border-cream/12 pt-10 lg:grid-cols-12 lg:gap-8">
           <motion.div className="lg:col-span-5" initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .75 }}>

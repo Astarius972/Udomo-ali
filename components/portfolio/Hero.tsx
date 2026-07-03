@@ -28,7 +28,7 @@ export default function Hero() {
     <section ref={ref} id="top" className="grain editorial-grid relative min-h-[100svh] overflow-hidden bg-ink text-cream lg:min-h-[108svh]">
       <div data-orange-glow className="orange-glow pointer-events-none absolute right-[4vw] top-[10vh] size-[58vw] max-h-[860px] max-w-[860px] rounded-full opacity-70" />
       <motion.div style={{ y: imageY, scale: imageScale }} className="hero-image-mask pointer-events-none absolute right-[-18%] top-[18%] z-[1] h-[70%] w-[110%] md:right-[-2%] md:top-[10%] md:h-[86%] md:w-[54%]">
-        <Image className="size-full object-cover object-[57%_center] saturate-[.72] contrast-[1.08]" src="/images/hero-udomo.jpg" alt="Udomo Ali" fill priority quality={90} sizes="(max-width: 768px) 100vw, 62vw" />
+        <Image className="size-full object-cover object-[57%_center] saturate-[.72] contrast-[1.08]" src="/images/hero-udomo.jpg" alt="Udomo Ali" fill priority quality={80} placeholder="blur" blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxNic+PHJlY3Qgd2lkdGg9JzEyJyBoZWlnaHQ9JzE2JyBmaWxsPScjOGY4NTdhJy8+PC9zdmc+" sizes="(max-width: 768px) 100vw, 62vw" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,242,236,.82),transparent_44%,rgba(244,242,236,.08)),linear-gradient(0deg,#f4f2ec_0%,transparent_30%,rgba(244,242,236,.15)_100%)]" />
       </motion.div>
 

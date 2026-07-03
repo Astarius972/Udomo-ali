@@ -11,7 +11,7 @@ export default function Services() {
       <div data-orange-glow className="orange-glow pointer-events-none absolute -left-48 top-24 size-[560px] rounded-full opacity-35" />
       <div className="relative z-10 mb-24 grid gap-8 md:grid-cols-12 md:items-end">
         <p className="text-[10px] font-semibold uppercase tracking-[.22em] text-orange md:col-span-3">03 · Services, Skills & Areas of Interest</p>
-        <div className="md:col-span-9"><AnimatedText><h2 className="display-text text-[clamp(4.5rem,10vw,11rem)] leading-[.8]">Services<br /><span className="outline-type">Offered</span></h2></AnimatedText></div>
+        <div className="min-w-0 md:col-span-9"><AnimatedText><h2 className="display-text text-[clamp(3.2rem,8vw,9rem)] leading-[.88]">Services<br /><span className="outline-type">Offered</span></h2></AnimatedText></div>
       </div>
 
       <div className="relative z-10 border-b border-cream/14">

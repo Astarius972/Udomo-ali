@@ -6,6 +6,9 @@ import { useRef, useState } from "react";
 
 type Tone = "sage" | "clay" | "slate" | "gold" | "blue" | "ink";
 
+const BLUR =
+  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxNic+PHJlY3Qgd2lkdGg9JzEyJyBoZWlnaHQ9JzE2JyBmaWxsPScjOGY4NTdhJy8+PC9zdmc+";
+
 const imagePositions: Record<string, string> = {
   "/images/about.jpg": "52% center",
   "/images/contact.jpg": "54% 34%",
@@ -41,7 +44,10 @@ export default function PlaceholderImage({ path, label, number = "00", tone = "s
             src={path}
             alt={label}
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 92vw, (max-width: 1200px) 50vw, 640px"
+            quality={75}
+            placeholder="blur"
+            blurDataURL={BLUR}
             className="object-cover saturate-[.82] contrast-[1.04] transition duration-700 ease-out group-hover:scale-[1.035] group-hover:saturate-100"
             style={{ objectPosition: imagePositions[path] ?? "center" }}
             onError={() => setFailed(true)}

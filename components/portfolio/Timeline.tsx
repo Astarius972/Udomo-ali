@@ -60,7 +60,7 @@ export default function Timeline() {
         <div data-orange-glow className="orange-glow pointer-events-none absolute -right-48 top-0 size-[580px] rounded-full opacity-35" />
         <div className="relative z-10 grid gap-8 md:grid-cols-12">
           <p className="text-[10px] font-semibold uppercase tracking-[.22em] text-orange md:col-span-3">02 · Experience, Achievements & Background</p>
-          <div className="md:col-span-9"><AnimatedText><h2 className="display-text text-balance text-[clamp(4rem,8.8vw,10rem)] leading-[.82]">Today, as a Career Counsellor, I tie all of these diverse chapters together.</h2></AnimatedText></div>
+          <div className="min-w-0 md:col-span-9"><AnimatedText><h2 className="display-text text-balance text-[clamp(2.4rem,6vw,6.6rem)] leading-[.92]">Today, as a Career Counsellor, I tie all of these diverse chapters together.</h2></AnimatedText></div>
         </div>
       </div>
 

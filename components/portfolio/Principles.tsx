@@ -9,7 +9,7 @@ export default function Principles() {
     <section className="page-shell relative overflow-hidden bg-ink py-28 text-cream md:py-44">
       <div className="mb-24 grid gap-8 md:grid-cols-12">
         <p className="text-[10px] font-semibold uppercase tracking-[.22em] text-orange md:col-span-3">05 · About Me</p>
-        <div className="md:col-span-9"><AnimatedText><h2 className="display-text text-balance text-[clamp(3.8rem,7.2vw,8.2rem)] leading-[.86]">My mission is to help you embrace your unique story and navigate your transition with total confidence.</h2></AnimatedText></div>
+        <div className="min-w-0 md:col-span-9"><AnimatedText><h2 className="display-text text-balance text-[clamp(2.2rem,5.4vw,6rem)] leading-[.94]">My mission is to help you embrace your unique story and navigate your transition with total confidence.</h2></AnimatedText></div>
       </div>
       <div className="border-b border-cream/12">
         {principles.map((principle, index) => (

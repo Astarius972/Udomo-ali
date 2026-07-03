@@ -11,7 +11,7 @@ export default function SectionHeading({ index, label, title, dark = false }: { 
         <span className="text-gold">{index}</span><span>{label}</span>
       </AnimatedText>
       <AnimatedText>
-        <h2 className={`display-text max-w-5xl text-balance text-[clamp(3.4rem,6.8vw,8rem)] leading-[.88] ${dark ? "text-cream" : "text-ink"}`}>{title}</h2>
+        <h2 className={`display-text max-w-5xl text-balance text-[clamp(2.3rem,5.2vw,5.8rem)] leading-[.96] ${dark ? "text-cream" : "text-ink"}`}>{title}</h2>
       </AnimatedText>
     </div>
   );
